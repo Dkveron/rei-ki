@@ -43,6 +43,27 @@
     .buttons a:hover {
       background: #8b4513;
     }
+
+    @media (max-width: 600px) {
+      .mobile-symbols {
+        flex-direction: row !important;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .buttons a {
+        margin: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -76,7 +97,7 @@
       </div>
 
       <!-- Символы Рэйки -->
-      <div style="display: flex; flex-direction: column; gap: 1rem; flex-shrink: 0;">
+      <div class="mobile-symbols" style="display: flex; flex-direction: column; gap: 1rem; flex-shrink: 0;">
         <img src="reiki1.svg" alt="Рэйки символ 1" style="height: 80px;">
         <img src="reiki2.svg" alt="Рэйки символ 2" style="height: 80px;">
         <img src="reiki3.svg" alt="Рэйки символ 3" style="height: 80px;">
